@@ -104,7 +104,8 @@ body{ font-family:'Roboto',sans-serif;
             line-height: 1.5;
             letter-spacing: 0.02;     
             position: relative;
-            color: var(--color-four);
+            color: var(--color-six);
+            transition: color var(--transition)
              }
          
 .menu-link::after{content:'';
@@ -120,31 +121,22 @@ body{ font-family:'Roboto',sans-serif;
                   transform: scaleX(0);
 }
 
-.menu-link:hover::after{transform: scaleX(1);}
- 
-       
-       
-       
+.menu-link:hover::after{transform: scaleX(1);}   
+      
 .menu-link:hover,.menu-link:focus{color: var(--color-six);}
  
 .adress{font-style: normal;
         align-items: center;}  
 
 
-.mail {font-size: 16px;
-       color: var(--color-four);
-       line-height: 1.5;
-       letter-spacing: 0.02em;
-       transition: var(--transition); }
-
-.phone-number{font-size: 16px;
-              color: var(--color-four);
-              line-height: 1.5;
-              letter-spacing: 0.02em;
-              transition: var(--transition);}
+.phone-number-mail{font-size: 16px;
+                   color: var(--color-four);
+                   line-height: 1.5;
+                   letter-spacing: 0.02em;
+                   transition: color var(--transition);}
             
-.mail:hover,.mail:focus{color: var(--color-six);}
-.phone-number:hover,.phone-number:focus{color:var(--color-six);}
+
+.phone-number-mail:hover,.phone-number-mail:focus{color:var(--color-six);}
 
 .m-left{margin-left: auto;} 
 
@@ -293,11 +285,7 @@ body{ font-family:'Roboto',sans-serif;
        border: 1px solid var(--color-seven);
        border-top: none;}
 .portfolio-shadow{box-shadow:none;
-              transition: color var(--transition),
-                     background-color var(--transition),
-                     border-color var(--transition),
-                     box-shadow var(--transition);
-} 
+                  transition:box-shadow var(--transition);} 
 
 .portfolio-shadow:hover,.portfolio-shadow:focus{
         box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08); 
@@ -431,7 +419,7 @@ body{ font-family:'Roboto',sans-serif;
           width: 100%;
           height: 100%;
           background-color: rgba(46, 47, 66, 0.4);
-          transition: opacity var(--transition), var(--transition);
+          transition: opacity var(--transition), visibility var(--transition);
 
 }
 
